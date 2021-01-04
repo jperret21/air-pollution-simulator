@@ -1,26 +1,27 @@
 #include "Simulator.h"
-#include "particle.h"
+#include "particles.h"
 
 
-void Simulator::compute(double t)
+
+void SteadySimulator::compute(int n)
   {
+    double t=4;
+    p.initParticles(n);
+    p.computeParticlesEvolution(t);
+    p.particlesPrint(t);
   }
 
-void SteadySimulator::compute(double t)
-  {
-    p.initParticle();
-    p.computeParticleEvolution(t);
-    p.particlePrint(t);
-  }
 
 
-void UnsteadySimulator::compute(double t)
+
+void UnsteadySimulator::compute(int n)
 {
-  p.initParticle();
+  double t=4;
+  p.initParticles(n);
 
   for(double i=0; i<t; i=i+0.5)
   {
-    p.computeParticleEvolution(i);
-    p.particlePrint(i);
+    p.computeParticlesEvolution(i);
+    p.particlesPrint(i);
   }
  }

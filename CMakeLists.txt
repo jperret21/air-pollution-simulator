@@ -7,8 +7,8 @@ find_package(GTest REQUIRED)
 
 
 # add the executable
-add_executable(main.exe main.cpp Simulator.cpp particle.cpp )
-add_executable(test.exe test.cpp particle.cpp )
+add_executable(main.exe main.cpp Simulator.cpp particles.cpp )
+add_executable(test.exe test.cpp particles.cpp )
 
 target_link_libraries(test.exe PUBLIC GTest::GTest GTest::Main )
 

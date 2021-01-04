@@ -1,15 +1,22 @@
 #include <iostream>
-#include "particle.h"
+#include "particles.h"
 #include "Simulator.h"
+#include <memory>
+#include <string>
 
 
 int main()
 {
   // create simulator
 
-  SteadySimulator sim1 = SteadySimulator();
-  UnsteadySimulator sim2 = UnsteadySimulator();
+  //std::unique_ptr<SteadySimulator> sim1(new SteadySimulator());
+   auto sim_steady= new SteadySimulator();
 
-  sim1.compute(1);
-  sim2.compute(3);
+  sim_steady->compute(4);
+
+
+  //particles* p= new particles();
+  //p->initParticles(10);
+
+
 }

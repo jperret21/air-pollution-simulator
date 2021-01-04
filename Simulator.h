@@ -3,24 +3,28 @@
 
 #include <iostream>
 #include <string>
-#include "particle.h"
+#include "particles.h"
 
 class Simulator
 {
   protected:
-    particle p{};
+    particles p{};
+    int n=10;
 
   public:
-    virtual void compute(double t);
+    virtual void compute(int n)=0;
+    virtual ~Simulator() = default;
 
 };
+
+
 
 
 //----------------------------------------//
 class SteadySimulator: public Simulator
 {
   public:
-    void compute(double t) override;
+    void compute(int n);
 };
 
 
@@ -28,7 +32,7 @@ class SteadySimulator: public Simulator
 class UnsteadySimulator: public Simulator
 {
   public:
-    void compute(double t) override;
+    void compute(int n);
 };
 
 #endif

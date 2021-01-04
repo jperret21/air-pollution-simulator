@@ -1,16 +1,16 @@
 #include "gtest/gtest.h"
-#include "particle.h"
+#include "particles.h"
 
 
 TEST(MainFunctionTest,InitParticlesTest)
 {
-  particle p = particle();
-  p.initParticle();
+  particles p = particles();
+  p.initParticles(10);
 }
 
 
 TEST(MainFunctionTest,PrintParticlesTest)
 {
-  particle p = particle();
-  p.particlePrint(2.0);
+  particles p = particles();
+  p.particlesPrint(2.0);
 }
