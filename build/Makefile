@@ -147,6 +147,33 @@ test.exe/fast:
 	$(MAKE) -f CMakeFiles/test.exe.dir/build.make CMakeFiles/test.exe.dir/build
 .PHONY : test.exe/fast
 
+GasField.o: GasField.cpp.o
+
+.PHONY : GasField.o
+
+# target to build an object file
+GasField.cpp.o:
+	$(MAKE) -f CMakeFiles/main.exe.dir/build.make CMakeFiles/main.exe.dir/GasField.cpp.o
+.PHONY : GasField.cpp.o
+
+GasField.i: GasField.cpp.i
+
+.PHONY : GasField.i
+
+# target to preprocess a source file
+GasField.cpp.i:
+	$(MAKE) -f CMakeFiles/main.exe.dir/build.make CMakeFiles/main.exe.dir/GasField.cpp.i
+.PHONY : GasField.cpp.i
+
+GasField.s: GasField.cpp.s
+
+.PHONY : GasField.s
+
+# target to generate assembly for a file
+GasField.cpp.s:
+	$(MAKE) -f CMakeFiles/main.exe.dir/build.make CMakeFiles/main.exe.dir/GasField.cpp.s
+.PHONY : GasField.cpp.s
+
 Simulator.o: Simulator.cpp.o
 
 .PHONY : Simulator.o
@@ -269,6 +296,9 @@ help:
 	@echo "... test"
 	@echo "... main.exe"
 	@echo "... test.exe"
+	@echo "... GasField.o"
+	@echo "... GasField.i"
+	@echo "... GasField.s"
 	@echo "... Simulator.o"
 	@echo "... Simulator.i"
 	@echo "... Simulator.s"

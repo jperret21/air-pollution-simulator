@@ -5,7 +5,7 @@
 
 void SteadySimulator::compute(int n)
   {
-    double t=4;
+    double t=1;
     p.initParticles(n);
     p.computeParticlesEvolution(t);
     p.particlesPrint(t);
