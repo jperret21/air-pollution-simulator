@@ -1,2 +1,4 @@
 #include "Simulator.h"
-#include "particles.h"
+
+
+int GasField::gas_velocity=1;

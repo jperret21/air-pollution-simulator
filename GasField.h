@@ -3,14 +3,13 @@
 
 #include <iostream>
 #include <string>
-#include "particles.h"
 
 // gasField::gas_velocity
 
 class GasField
 {
 public:
-  static const int gas_velocity=1;
+  static int  gas_velocity;
 
 };
 

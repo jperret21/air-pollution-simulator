@@ -3,8 +3,7 @@
 #include <iostream>
 #include <string>
 #include <vector>
-#include "GasField.h"
-
+//#include "GasField.h"
 
 
 class particles
@@ -13,8 +12,8 @@ class particles
     void initParticles(int n);
     void computeParticlesEvolution(double i);
     void particlesPrint(double i);
-    void printVelocities();
-    void printPosition();
+    void printVelocities(int t);
+    void printPosition(int t);
 
 
   private:
@@ -23,5 +22,12 @@ class particles
 
 };
 
+
+class GasField
+{
+public:
+  static int  gas_velocity;
+
+};
 
 #endif

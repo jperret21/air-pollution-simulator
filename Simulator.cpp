@@ -6,9 +6,13 @@
 void SteadySimulator::compute(int n)
   {
     double t=1;
+
     p.initParticles(n);
     p.computeParticlesEvolution(t);
     p.particlesPrint(t);
+
+    p.printVelocities(t);
+    p.printPosition(t);
   }
 
 
@@ -16,7 +20,7 @@ void SteadySimulator::compute(int n)
 
 void UnsteadySimulator::compute(int n)
 {
-  double t=4;
+  double t=1;
   p.initParticles(n);
 
   for(double i=0; i<t; i=i+0.5)

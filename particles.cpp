@@ -4,7 +4,7 @@
 #include <string>
 #include <vector>
 #include "particles.h"
-#include "GasField.h"
+//#include "GasField.h"
 
 
 
@@ -13,6 +13,7 @@ void particles::initParticles(int n)
 {
  // creer vecteur de  taille n
   std::cout << "Init particles"<<std::endl;
+
   speed = std::vector<double>(n);
   position= std::vector<double>(n);
 
@@ -21,9 +22,10 @@ void particles::initParticles(int n)
 
 }
 
-  void particles::printVelocities()
+  void particles::printVelocities(int t)
   {
     // write speed of particule in file
+    std::cout<< "-- Export particles velocities at time t= " << t <<" file particles_velocities" <<std::endl;
     std::ofstream file_speed ("particle_speed.dat");
     if (file_speed.is_open())
     {
@@ -33,8 +35,10 @@ void particles::initParticles(int n)
     }
    }
 
-   void particles::printPosition()
+   void particles::printPosition(int t)
    {
+
+     std::cout<< "-- Export particles velocities at time t= " << t <<" file particles_positions" <<std::endl;
      std::ofstream file_position ("particle_position.dat");
      if (file_position.is_open())
      {
@@ -47,6 +51,7 @@ void particles::initParticles(int n)
 
   void particles::computeParticlesEvolution(double i)
   {
+
     std::fill(speed.begin(),speed.end(),GasField::gas_velocity);
     std::fill(position.begin(),position.end(),GasField::gas_velocity);
 
@@ -59,3 +64,7 @@ void particles::initParticles(int n)
   {
     std::cout <<"--- print particle positions at time :" << i <<"---" <<std::endl;
   }
+
+
+
+  int GasField::gas_velocity=1;
