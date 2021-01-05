@@ -1,0 +1,5 @@
+add_test( MainFunctionTest.InitParticlesTest /home/deathbian/Documents/CHPS/M1/POO/td2/v2/build/test.exe [==[--gtest_filter=MainFunctionTest.InitParticlesTest]==] --gtest_also_run_disabled_tests)
+set_tests_properties( MainFunctionTest.InitParticlesTest PROPERTIES WORKING_DIRECTORY /home/deathbian/Documents/CHPS/M1/POO/td2/v2/build)
+add_test( MainFunctionTest.PrintParticlesTest /home/deathbian/Documents/CHPS/M1/POO/td2/v2/build/test.exe [==[--gtest_filter=MainFunctionTest.PrintParticlesTest]==] --gtest_also_run_disabled_tests)
+set_tests_properties( MainFunctionTest.PrintParticlesTest PROPERTIES WORKING_DIRECTORY /home/deathbian/Documents/CHPS/M1/POO/td2/v2/build)
+set( test.exe_TESTS MainFunctionTest.InitParticlesTest MainFunctionTest.PrintParticlesTest)

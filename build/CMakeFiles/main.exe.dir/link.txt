@@ -1,1 +1,1 @@
-/usr/bin/c++     CMakeFiles/main.exe.dir/main.cpp.o CMakeFiles/main.exe.dir/Simulator.cpp.o CMakeFiles/main.exe.dir/particles.cpp.o CMakeFiles/main.exe.dir/GasField.cpp.o  -o main.exe 
+/usr/bin/c++     CMakeFiles/main.exe.dir/main.cpp.o CMakeFiles/main.exe.dir/Simulator.cpp.o CMakeFiles/main.exe.dir/particles.cpp.o  -o main.exe 

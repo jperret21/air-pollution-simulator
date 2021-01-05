@@ -2,7 +2,6 @@ file(REMOVE_RECURSE
   "CMakeFiles/main.exe.dir/main.cpp.o"
   "CMakeFiles/main.exe.dir/Simulator.cpp.o"
   "CMakeFiles/main.exe.dir/particles.cpp.o"
-  "CMakeFiles/main.exe.dir/GasField.cpp.o"
   "main.exe.pdb"
   "main.exe"
 )
