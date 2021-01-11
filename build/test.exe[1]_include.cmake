@@ -1,5 +1,0 @@
-if(EXISTS "/home/deathbian/Documents/CHPS/M1/POO/td2/v2/build/test.exe[1]_tests.cmake")
-  include("/home/deathbian/Documents/CHPS/M1/POO/td2/v2/build/test.exe[1]_tests.cmake")
-else()
-  add_test(test.exe_NOT_BUILT test.exe_NOT_BUILT)
-endif()

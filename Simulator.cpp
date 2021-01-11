@@ -7,12 +7,12 @@ void SteadySimulator::compute(int n)
   {
     double t=1;
 
-    p.initParticles(n);
-    p.computeParticlesEvolution(t);
+    p.initParticles(n,GasType::steady,pas);
+    p.computeParticlesEvolution(t,GasType::steady);
     p.particlesPrint(t);
 
-    p.printVelocities(t);
-    p.printPosition(t);
+    //p.printVelocities(t);
+    //p.printPosition(t);
   }
 
 
@@ -21,11 +21,10 @@ void SteadySimulator::compute(int n)
 void UnsteadySimulator::compute(int n)
 {
   double t=1;
-  p.initParticles(n);
+  p.initParticles(n,GasType::unsteady,pas);
+  p.computeParticlesEvolution(t,GasType::unsteady);
 
-  for(double i=0; i<t; i=i+0.5)
-  {
-    p.computeParticlesEvolution(i);
-    p.particlesPrint(i);
-  }
- }
+  //p.printVelocities(t);
+  //p.printPosition(t);
+//p.particlesPrint(t);
+}

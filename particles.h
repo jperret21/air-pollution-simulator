@@ -3,31 +3,30 @@
 #include <iostream>
 #include <string>
 #include <vector>
-//#include "GasField.h"
 
+enum class GasType {steady,unsteady};
+
+class GasField
+{
+  public:
+    static int  gas_velocity;
+
+};
 
 class particles
 {
   public:
-    void initParticles(int n);
-    void computeParticlesEvolution(double i);
+    void initParticles(int n,GasType gs,double pas);
+    void computeParticlesEvolution(double i,GasType gf);
     void particlesPrint(double i);
-    void printVelocities(int t);
-    void printPosition(int t);
-
+    void printVelocities(double t);
+    void printPosition(double t);
 
   private:
     std::vector<double> speed;
     std::vector<double> position;
-
 };
 
 
-class GasField
-{
-public:
-  static int  gas_velocity;
-
-};
 
 #endif

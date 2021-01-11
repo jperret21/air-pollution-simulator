@@ -1,5 +1,0 @@
-/home/deathbian/Documents/CHPS/M1/POO/td2/v2/build/CMakeFiles/rebuild_cache.dir
-/home/deathbian/Documents/CHPS/M1/POO/td2/v2/build/CMakeFiles/edit_cache.dir
-/home/deathbian/Documents/CHPS/M1/POO/td2/v2/build/CMakeFiles/test.dir
-/home/deathbian/Documents/CHPS/M1/POO/td2/v2/build/CMakeFiles/main.exe.dir
-/home/deathbian/Documents/CHPS/M1/POO/td2/v2/build/CMakeFiles/test.exe.dir

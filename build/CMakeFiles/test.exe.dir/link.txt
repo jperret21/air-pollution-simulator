@@ -1,1 +1,0 @@
-/usr/bin/c++     CMakeFiles/test.exe.dir/test.cpp.o CMakeFiles/test.exe.dir/particles.cpp.o  -o test.exe /usr/local/lib/libgtest.a /usr/local/lib/libgtest_main.a /usr/local/lib/libgtest.a -lpthread 

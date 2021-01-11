@@ -2,10 +2,11 @@
 #include "particles.h"
 
 
+
 TEST(MainFunctionTest,InitParticlesTest)
 {
   particles p = particles();
-  p.initParticles(10);
+  p.initParticles(10,GasType::steady,0.1);
 }
 
 
